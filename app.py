@@ -55,8 +55,9 @@ def index():
                     CREATE TABLE IF NOT EXISTS ziyaretciler (
                         id SERIAL PRIMARY KEY,
                         isim TEXT NOT NULL
-                    )
-                """)
+
+                  (""")
+                  
                 if request.method == "POST":
                     isim = (request.form.get("isim") or "").strip()
                     if isim:
