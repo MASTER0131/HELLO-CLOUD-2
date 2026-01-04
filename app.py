@@ -8,8 +8,7 @@ app = Flask(__name__)
 # Render'dan otomatik gelen DATABASE_URL veya varsayılan bağlantı
 DATABASE_URL = os.getenv(
     "DATABASE_URL",
-
-db_url = "postgresql://user:password@dpg-d3tj...oregon-postgres.render.com/dbname?sslmode=require"
+  "postgres://user:password@dpg-d3tj...oregon-postgres.render.com/dbname"
 )
 
 # HTML şablonu
